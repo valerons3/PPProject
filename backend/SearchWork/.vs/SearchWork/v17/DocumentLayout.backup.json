@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\interview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\interview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\jobcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\jobcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SearchWork\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:02:16.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Subscription.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Subscription.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Subscription.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Subscription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:01:28.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Notification.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Notification.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:01:17.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Review.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Review.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:01:04.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Interview.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Interview.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Interview.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Interview.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Interview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:00:52.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Resume.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Resume.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Resume.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Resume.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Resume.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:00:40.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Application.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Application.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Application.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Application.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Application.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:00:27.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Job.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Job.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Job.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Job.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Job.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAywCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:00:14.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Company.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Company.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Company.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Company.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:59:57.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\User.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\User.cs",
+              "RelativeToolTip": "SearchWork\\Models\\User.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:59:40.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JobCategory.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\JobCategory.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\JobCategory.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\JobCategory.cs",
+              "RelativeToolTip": "SearchWork\\Models\\JobCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:59:24.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Role.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Role.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:58:39.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\appsettings.json",
+              "RelativeDocumentMoniker": "SearchWork\\appsettings.json",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\appsettings.json",
+              "RelativeToolTip": "SearchWork\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-03T16:17:47.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Program.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Program.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Program.cs",
+              "RelativeToolTip": "SearchWork\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T16:15:18.405Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
