@@ -12,7 +12,7 @@ using SearchWork.Data;
 namespace SearchWork.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250303202903_InitialCreate")]
+    [Migration("20250304164322_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -34,7 +34,6 @@ namespace SearchWork.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CoverLetter")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
@@ -43,29 +42,18 @@ namespace SearchWork.Migrations
                     b.Property<int>("JobId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("JobId1")
+                    b.Property<int>("SeekerId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
-
-                    b.Property<int>("StudentId")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("UserId")
-                        .HasColumnType("integer");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.HasIndex("JobId");
 
-                    b.HasIndex("JobId1");
-
-                    b.HasIndex("StudentId");
-
-                    b.HasIndex("UserId");
+                    b.HasIndex("SeekerId");
 
                     b.ToTable("Applications");
                 });
@@ -82,19 +70,22 @@ namespace SearchWork.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)");
+                        .HasColumnType("text");
+
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Website")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OwnerId")
+                        .IsUnique();
 
                     b.ToTable("Companies");
                 });
@@ -137,9 +128,6 @@ namespace SearchWork.Migrations
                     b.Property<int>("CompanyId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("CompanyId1")
-                        .HasColumnType("integer");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
@@ -147,32 +135,22 @@ namespace SearchWork.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int?>("JobCategoryId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Skills")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("CompanyId");
-
-                    b.HasIndex("CompanyId1");
-
-                    b.HasIndex("JobCategoryId");
 
                     b.ToTable("Jobs");
                 });
@@ -186,13 +164,11 @@ namespace SearchWork.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -220,14 +196,9 @@ namespace SearchWork.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("UserId1")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
-
-                    b.HasIndex("UserId1");
 
                     b.ToTable("Notifications");
                 });
@@ -247,17 +218,12 @@ namespace SearchWork.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("StudentId")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("UserId")
+                    b.Property<int>("SeekerId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("StudentId");
-
-                    b.HasIndex("UserId");
+                    b.HasIndex("SeekerId");
 
                     b.ToTable("Resumes");
                 });
@@ -270,11 +236,7 @@ namespace SearchWork.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AuthorId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Comment")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
@@ -283,24 +245,17 @@ namespace SearchWork.Migrations
                     b.Property<int>("JobId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("JobId1")
-                        .HasColumnType("integer");
-
                     b.Property<int>("Rating")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("UserId")
+                    b.Property<int>("SeekerId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AuthorId");
-
                     b.HasIndex("JobId");
 
-                    b.HasIndex("JobId1");
-
-                    b.HasIndex("UserId");
+                    b.HasIndex("SeekerId");
 
                     b.ToTable("Reviews");
                 });
@@ -314,13 +269,11 @@ namespace SearchWork.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -341,24 +294,14 @@ namespace SearchWork.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int?>("JobCategoryId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("StudentId")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("UserId")
+                    b.Property<int>("SeekerId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
-                    b.HasIndex("JobCategoryId");
-
-                    b.HasIndex("StudentId");
-
-                    b.HasIndex("UserId");
+                    b.HasIndex("SeekerId");
 
                     b.ToTable("Subscriptions");
                 });
@@ -376,29 +319,24 @@ namespace SearchWork.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)");
+                        .HasColumnType("text");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("RoleId")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("RoleId1")
-                        .HasColumnType("integer");
+                    b.Property<string>("UserType")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RoleId");
-
-                    b.HasIndex("RoleId1");
+                    b.HasIndex("Email")
+                        .IsUnique();
 
                     b.ToTable("Users");
                 });
@@ -406,28 +344,31 @@ namespace SearchWork.Migrations
             modelBuilder.Entity("SearchWork.Models.Application", b =>
                 {
                     b.HasOne("SearchWork.Models.Job", "Job")
-                        .WithMany()
+                        .WithMany("Applications")
                         .HasForeignKey("JobId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SearchWork.Models.Job", null)
-                        .WithMany("Applications")
-                        .HasForeignKey("JobId1");
-
-                    b.HasOne("SearchWork.Models.User", "Student")
+                    b.HasOne("SearchWork.Models.User", "Seeker")
                         .WithMany()
-                        .HasForeignKey("StudentId")
+                        .HasForeignKey("SeekerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SearchWork.Models.User", null)
-                        .WithMany("Applications")
-                        .HasForeignKey("UserId");
-
                     b.Navigation("Job");
 
-                    b.Navigation("Student");
+                    b.Navigation("Seeker");
+                });
+
+            modelBuilder.Entity("SearchWork.Models.Company", b =>
+                {
+                    b.HasOne("SearchWork.Models.User", "Owner")
+                        .WithOne()
+                        .HasForeignKey("SearchWork.Models.Company", "OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owner");
                 });
 
             modelBuilder.Entity("SearchWork.Models.Interview", b =>
@@ -444,24 +385,16 @@ namespace SearchWork.Migrations
             modelBuilder.Entity("SearchWork.Models.Job", b =>
                 {
                     b.HasOne("SearchWork.Models.JobCategory", "Category")
-                        .WithMany()
+                        .WithMany("Jobs")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("SearchWork.Models.Company", "Company")
-                        .WithMany()
+                        .WithMany("Jobs")
                         .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("SearchWork.Models.Company", null)
-                        .WithMany("Jobs")
-                        .HasForeignKey("CompanyId1");
-
-                    b.HasOne("SearchWork.Models.JobCategory", null)
-                        .WithMany("Jobs")
-                        .HasForeignKey("JobCategoryId");
 
                     b.Navigation("Category");
 
@@ -476,53 +409,37 @@ namespace SearchWork.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SearchWork.Models.User", null)
-                        .WithMany("Notifications")
-                        .HasForeignKey("UserId1");
-
                     b.Navigation("User");
                 });
 
             modelBuilder.Entity("SearchWork.Models.Resume", b =>
                 {
-                    b.HasOne("SearchWork.Models.User", "Student")
+                    b.HasOne("SearchWork.Models.User", "Seeker")
                         .WithMany()
-                        .HasForeignKey("StudentId")
+                        .HasForeignKey("SeekerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SearchWork.Models.User", null)
-                        .WithMany("Resumes")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("Student");
+                    b.Navigation("Seeker");
                 });
 
             modelBuilder.Entity("SearchWork.Models.Review", b =>
                 {
-                    b.HasOne("SearchWork.Models.User", "Author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("SearchWork.Models.Job", "Job")
                         .WithMany()
                         .HasForeignKey("JobId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SearchWork.Models.Job", null)
-                        .WithMany("Reviews")
-                        .HasForeignKey("JobId1");
-
-                    b.HasOne("SearchWork.Models.User", null)
-                        .WithMany("Reviews")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("Author");
+                    b.HasOne("SearchWork.Models.User", "Seeker")
+                        .WithMany()
+                        .HasForeignKey("SeekerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Job");
+
+                    b.Navigation("Seeker");
                 });
 
             modelBuilder.Entity("SearchWork.Models.Subscription", b =>
@@ -533,38 +450,15 @@ namespace SearchWork.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SearchWork.Models.JobCategory", null)
-                        .WithMany("Subscriptions")
-                        .HasForeignKey("JobCategoryId");
-
-                    b.HasOne("SearchWork.Models.User", "Student")
+                    b.HasOne("SearchWork.Models.User", "Seeker")
                         .WithMany()
-                        .HasForeignKey("StudentId")
+                        .HasForeignKey("SeekerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("SearchWork.Models.User", null)
-                        .WithMany("Subscriptions")
-                        .HasForeignKey("UserId");
 
                     b.Navigation("Category");
 
-                    b.Navigation("Student");
-                });
-
-            modelBuilder.Entity("SearchWork.Models.User", b =>
-                {
-                    b.HasOne("SearchWork.Models.Role", "Role")
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SearchWork.Models.Role", null)
-                        .WithMany("Users")
-                        .HasForeignKey("RoleId1");
-
-                    b.Navigation("Role");
+                    b.Navigation("Seeker");
                 });
 
             modelBuilder.Entity("SearchWork.Models.Company", b =>
@@ -575,33 +469,11 @@ namespace SearchWork.Migrations
             modelBuilder.Entity("SearchWork.Models.Job", b =>
                 {
                     b.Navigation("Applications");
-
-                    b.Navigation("Reviews");
                 });
 
             modelBuilder.Entity("SearchWork.Models.JobCategory", b =>
                 {
                     b.Navigation("Jobs");
-
-                    b.Navigation("Subscriptions");
-                });
-
-            modelBuilder.Entity("SearchWork.Models.Role", b =>
-                {
-                    b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("SearchWork.Models.User", b =>
-                {
-                    b.Navigation("Applications");
-
-                    b.Navigation("Notifications");
-
-                    b.Navigation("Resumes");
-
-                    b.Navigation("Reviews");
-
-                    b.Navigation("Subscriptions");
                 });
 #pragma warning restore 612, 618
         }

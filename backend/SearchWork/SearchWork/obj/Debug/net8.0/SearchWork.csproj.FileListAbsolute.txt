@@ -151,3 +151,17 @@ D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\zh-Ha
 D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Npgsql.dll
 D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\FluentValidation.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\obj\Debug\net8.0\SearchWork.sourcelink.json

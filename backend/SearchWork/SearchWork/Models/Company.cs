@@ -1,23 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace SearchWork.Models
+﻿namespace SearchWork.Models
 {
     public class Company
     {
         public int Id { get; set; }
-
-        [Required]
-        [MaxLength(255)]
-        public string Name { get; set; }
-
-        public string Description { get; set; }
-
-        public string Website { get; set; }
-
+        public string Name { get; set; } = string.Empty;
+        public string? Description { get; set; }
+        public string? Website { get; set; }
+        public int OwnerId { get; set; }
+        public User Owner { get; set; } = null!;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
-        public List<Job> Jobs { get; set; } = new();
+        public ICollection<Job> Jobs { get; set; } = new List<Job>();
     }
 }
