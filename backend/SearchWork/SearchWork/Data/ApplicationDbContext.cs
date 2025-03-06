@@ -1,84 +1,95 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SearchWork.Models;
+using SearchWork.Models.Entity;
 
 namespace SearchWork.Data;
 public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
+
+    public DbSet<Application> Applications { get; set; }
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<Company> Companies { get; set; }
+    public DbSet<Interview> Interviews { get; set; }
+    public DbSet<Notification> Notifications { get; set; }
+    public DbSet<Resume> Resumes { get; set; }
+    public DbSet<Review> Reviews { get; set; }
     public DbSet<Role> Roles { get; set; }
     public DbSet<User> Users { get; set; }
-    public DbSet<Company> Companies { get; set; }
-    public DbSet<JobCategory> JobCategories { get; set; }
-    public DbSet<Job> Jobs { get; set; }
-    public DbSet<Application> Applications { get; set; }
-    public DbSet<Resume> Resumes { get; set; }
-    public DbSet<Interview> Interviews { get; set; }
-    public DbSet<Review> Reviews { get; set; }
-    public DbSet<Notification> Notifications { get; set; }
-    public DbSet<Subscription> Subscriptions { get; set; }
+    public DbSet<Vacancy> Vacancies { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<User>().
-            HasIndex(u => u.Email).
-            IsUnique();
+        // User - Role (Many-to-One)
+        modelBuilder.Entity<User>()
+            .HasOne(u => u.UserRole)
+            .WithMany(r => r.RoleUsers)
+            .HasForeignKey(u => u.RoleId);
 
-        modelBuilder.Entity<Company>().
-            HasOne(c => c.Owner).
-            WithOne().
-            HasForeignKey<Company>(c => c.OwnerId);
-        modelBuilder.Entity<Company>()
-            .HasMany(c => c.Jobs)
-            .WithOne(j => j.Company)
-            .HasForeignKey(j => j.CompanyId);
+        // User - Company (One-to-One)
+        modelBuilder.Entity<User>()
+            .HasOne(u => u.Company)
+            .WithOne(c => c.User)
+            .HasForeignKey<Company>(c => c.UserId);
 
-        modelBuilder.Entity<Job>().
-            HasOne(j => j.Category).
-            WithMany(c => c.Jobs).
-            HasForeignKey(j => j.CategoryId);
-        modelBuilder.Entity<Job>().
-            HasMany(j => j.Applications).
-            WithOne(a => a.Job).
-            HasForeignKey(a => a.JobId);
+        // User - Resume (One-to-One)
+        modelBuilder.Entity<User>()
+            .HasOne(u => u.UserResume)
+            .WithOne(r => r.User)
+            .HasForeignKey<Resume>(r => r.UserId);
 
-        modelBuilder.Entity<Application>().
-            HasOne(a => a.Seeker).
-            WithMany().
-            HasForeignKey(a => a.SeekerId);
+        // User - Applications (One-to-Many)
+        modelBuilder.Entity<User>()
+            .HasMany(u => u.UserApplications)
+            .WithOne(a => a.User)
+            .HasForeignKey(a => a.UserId);
 
-        modelBuilder.Entity<Resume>().
-            HasOne(r => r.Seeker)
-            .WithMany().
-            HasForeignKey(r => r.SeekerId);
-
-        modelBuilder.Entity<Interview>()
-            .HasOne(i => i.Application)
-            .WithMany()
-            .HasForeignKey(i => i.ApplicationId);
-
-        modelBuilder.Entity<Review>()
-            .HasOne(r => r.Seeker)
-            .WithMany()
-            .HasForeignKey(r => r.SeekerId);
-        modelBuilder.Entity<Review>()
-            .HasOne(r => r.Job)
-            .WithMany()
-            .HasForeignKey(r => r.JobId);
-
-        modelBuilder.Entity<Notification>()
-            .HasOne(n => n.User)
-            .WithMany()
+        // User - Notifications (One-to-Many)
+        modelBuilder.Entity<User>()
+            .HasMany(u => u.UserNotifications)
+            .WithOne(n => n.Users)
             .HasForeignKey(n => n.UserId);
 
-        modelBuilder.Entity<Subscription>()
-            .HasOne(s => s.Seeker)
-            .WithMany()
-            .HasForeignKey(s => s.SeekerId);
+        // User - Reviews (One-to-Many) (Reviewer & Reviewed)
+        modelBuilder.Entity<Review>()
+            .HasOne(r => r.Reviewer)
+            .WithMany(u => u.GivenReviews)
+            .HasForeignKey(r => r.ReviewerId)
+            .OnDelete(DeleteBehavior.Restrict);
 
-        modelBuilder.Entity<Subscription>()
-            .HasOne(s => s.Category)
+        modelBuilder.Entity<Review>()
+            .HasOne(r => r.Reviewed)
+            .WithMany(u => u.ReceivedReviews)
+            .HasForeignKey(r => r.ReviewedId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        // Company - Vacancies (One-to-Many)
+        modelBuilder.Entity<Company>()
+            .HasMany(c => c.CompanyVacancies)
+            .WithOne(v => v.Company)
+            .HasForeignKey(v => v.CompanyId);
+
+        // Vacancy - Category (Many-to-One)
+        modelBuilder.Entity<Vacancy>()
+            .HasOne(v => v.Company)
+            .WithMany(c => c.CompanyVacancies)
+            .HasForeignKey(v => v.CompanyId);
+
+        modelBuilder.Entity<Vacancy>()
+            .HasOne<Category>()
+            .WithMany(c => c.CategoryVacancies)
+            .HasForeignKey(v => v.CategoryId);
+
+        // Application - Vacancy (Many-to-One)
+        modelBuilder.Entity<Application>()
+            .HasOne<Vacancy>()
             .WithMany()
-            .HasForeignKey(s => s.CategoryId);
+            .HasForeignKey(a => a.VacansyId);
+
+        // Application - Interview (One-to-One)
+        modelBuilder.Entity<Application>()
+            .HasOne(a => a.interview)
+            .WithOne(i => i.Application)
+            .HasForeignKey<Interview>(i => i.ApplicationId);
     }
 }

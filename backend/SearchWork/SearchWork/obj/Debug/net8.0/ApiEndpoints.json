@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "SearchWork.Models.LoginModel",
+        "Type": "SearchWork.Models.DTO.LoginDTO",
         "IsRequired": true
       }
     ],
@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "SearchWork.Models.RegisterModel",
+        "Type": "SearchWork.Models.DTO.RegisterDto",
         "IsRequired": true
       }
     ],
