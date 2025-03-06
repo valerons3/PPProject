@@ -26,12 +26,16 @@ namespace SearchWork.Services
             var jwtSettings = config.GetSection("Jwt");
             var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
             var tokenHandler = new JwtSecurityTokenHandler();
+
+            var role = context.Roles.FirstOrDefault(r => r.RoleId == user.RoleId)?.RoleName;
+
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
-                    new Claim(ClaimTypes.Name, user.Email)
+            new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+            new Claim(ClaimTypes.Name, user.Email),
+            new Claim(ClaimTypes.Role, role) 
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(Convert.ToInt32(jwtSettings["ExpireMinutes"])),
                 Issuer = jwtSettings["Issuer"],
@@ -42,6 +46,7 @@ namespace SearchWork.Services
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
 
         public async Task<string?> Login(string email, string password)
         {

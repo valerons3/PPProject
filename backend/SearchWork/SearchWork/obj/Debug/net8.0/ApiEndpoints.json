@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "SearchWork.Controllers.AuthController",
+    "Method": "GetRoleFromToken",
+    "RelativePath": "api/auth/getRoleFromToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SearchWork.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/auth/login",
     "HttpMethod": "POST",

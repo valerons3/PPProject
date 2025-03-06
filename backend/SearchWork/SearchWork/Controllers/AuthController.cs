@@ -4,6 +4,8 @@ using SearchWork.Services;
 using SearchWork.Models.Entity;
 using SearchWork.Models.DTO;
 using SearchWork.Data;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace SearchWork.Controllers
 {
