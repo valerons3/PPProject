@@ -17,6 +17,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Role> Roles { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Vacancy> Vacancies { get; set; }
+    public DbSet<CategoryRequest> CategoryRequests { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -91,5 +92,8 @@ public class ApplicationDbContext : DbContext
             .HasOne(a => a.interview)
             .WithOne(i => i.Application)
             .HasForeignKey<Interview>(i => i.ApplicationId);
+
+        modelBuilder.Entity<CategoryRequest>()
+            .HasKey(c => c.RequestId);
     }
 }

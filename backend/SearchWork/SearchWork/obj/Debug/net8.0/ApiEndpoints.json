@@ -32,6 +32,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SearchWork.Controllers.CategoryController",
+    "Method": "CreateCategoryRequestAsync",
+    "RelativePath": "api/category/add-request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SearchWork.Models.DTO.CategoryDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SearchWork.Controllers.CategoryController",
+    "Method": "ConfirmCategoryRequestAsync",
+    "RelativePath": "api/category/confirm",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SearchWork.Models.DTO.CategoryDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SearchWork.Controllers.CompanyController",
     "Method": "CreateCompany",
     "RelativePath": "api/company",
@@ -45,6 +77,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SearchWork.Controllers.CompanyController",
+    "Method": "GetCompanyByUserIdAsync",
+    "RelativePath": "api/company/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

@@ -77,7 +77,7 @@ namespace SearchWork.Services
                 CreatedAt = DateTime.UtcNow,
             };
 
-            context.Users.Add(user);
+            await context.Users.AddAsync(user);
             await context.SaveChangesAsync();
             return GenerateJwtToken(user);
         }

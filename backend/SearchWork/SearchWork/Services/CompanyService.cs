@@ -17,6 +17,22 @@ namespace SearchWork.Services
             this.validator = validator;
         }
 
+        public async Task<CompanyCreateDTO?> FindCompanyByIdAsync(int userId)
+        {
+            var existingCompany = await context.Companies.FirstOrDefaultAsync(c => c.UserId == userId);
+
+            if (existingCompany == null) { return null; }
+
+            CompanyCreateDTO company = new CompanyCreateDTO()
+            {
+                Name = existingCompany.Name,
+                Description = existingCompany.Description,
+                LogoPath = existingCompany.LogoPath,
+                WebSite = existingCompany.Website
+            };
+            return company;
+        }
+
         public async Task<(bool Success, string Message)> CreateCompany(int userId, CompanyCreateDTO companyDto)
         {
             var validationResult = await validator.ValidateAsync(companyDto);
