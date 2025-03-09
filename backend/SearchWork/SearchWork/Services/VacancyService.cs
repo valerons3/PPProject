@@ -64,9 +64,30 @@ namespace SearchWork.Services
         }
 
 
-        public Task<List<VacancyDTO>?> GetAllVacanciesCompanyAsync(int userId)
+        public async Task<List<VacancyDTO>?> GetAllVacanciesCompanyAsync(string name)
         {
-            throw new NotImplementedException();
+            var company = await context.Companies
+                                .Include(c => c.CompanyVacancies) 
+                                .FirstOrDefaultAsync(c => c.Name == name);
+
+            if (company == null || company.CompanyVacancies == null || company.CompanyVacancies.Count == 0)
+            {
+                return null;
+            }
+
+            var categories = await context.Categories.ToListAsync();
+
+            var vacancyDTOs = company.CompanyVacancies.Select(v => new VacancyDTO
+            {
+                Title = v.Title,
+                CategoryName = categories.FirstOrDefault(c => c.CategoryId == v.CategoryId)?.Name ?? "Не указана", 
+                Description = v.Description,
+                Location = v.Location,
+                Salary = v.Salary
+            }).ToList();
+
+            return await Task.FromResult(vacancyDTOs);
         }
+
     }
 }

@@ -19,6 +19,17 @@ namespace SearchWork.Controllers
             this.vacancyService = vacancyService;
         }
 
+        [HttpGet("company")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllCompanyVacancies([FromQuery] string companyName)
+        {
+            if (string.IsNullOrEmpty(companyName)) { return BadRequest("Нужно передать название компании"); }
+
+            var companyVacancies = await vacancyService.GetAllVacanciesCompanyAsync(companyName);
+            if (companyVacancies == null) { return NotFound("Вакансии для указанной компании не найдены"); }
+
+            return Ok(companyVacancies);
+        }
 
         [HttpPost]
         public async Task<IActionResult> CreateNewVacancyAsync(VacancyDTO model)

@@ -20,7 +20,17 @@ namespace SearchWork.Controllers
             categoryService = category;
         }
 
-        [HttpGet("category")]
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllCategoriesAsync()
+        {
+            var categories = await categoryService.GetAllCategoryAsync();
+
+            if (categories == null) { return Ok(new List<CategoryDTO>()); }
+            return Ok(categories);
+        }
+
+        [HttpGet("vacancies")]
         [AllowAnonymous]
         public async Task<IActionResult> GetAllVacanciesByCategoryAsync([FromQuery] string categoryName)
         {

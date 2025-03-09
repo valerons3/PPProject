@@ -33,6 +33,16 @@
   },
   {
     "ContainingType": "SearchWork.Controllers.CategoryController",
+    "Method": "GetAllCategoriesAsync",
+    "RelativePath": "api/category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SearchWork.Controllers.CategoryController",
     "Method": "CreateCategoryRequestAsync",
     "RelativePath": "api/category/add-request",
     "HttpMethod": "POST",
@@ -49,22 +59,6 @@
   },
   {
     "ContainingType": "SearchWork.Controllers.CategoryController",
-    "Method": "GetAllVacanciesByCategoryAsync",
-    "RelativePath": "api/category/category",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "categoryName",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SearchWork.Controllers.CategoryController",
     "Method": "ConfirmCategoryRequestAsync",
     "RelativePath": "api/category/confirm",
     "HttpMethod": "PUT",
@@ -75,6 +69,22 @@
         "Name": "model",
         "Type": "SearchWork.Models.DTO.CategoryDTO",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SearchWork.Controllers.CategoryController",
+    "Method": "GetAllVacanciesByCategoryAsync",
+    "RelativePath": "api/category/vacancies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -117,6 +127,22 @@
         "Name": "model",
         "Type": "SearchWork.Models.DTO.VacancyDTO",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SearchWork.Controllers.VacancyController",
+    "Method": "GetAllCompanyVacancies",
+    "RelativePath": "api/vacancy/company",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
