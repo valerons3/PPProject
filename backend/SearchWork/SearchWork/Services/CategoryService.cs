@@ -3,7 +3,6 @@ using SearchWork.Data;
 using SearchWork.Models.DTO;
 using SearchWork.Models.Entity;
 using SearchWork.Services.Interfaces;
-
 namespace SearchWork.Services
 {
     public class CategoryService : ICategory
@@ -125,6 +124,32 @@ namespace SearchWork.Services
             context.Categories.Remove(category);
             await context.SaveChangesAsync();
             return (true, $"Категория \"{model.CategoryName}\" успешно удалена");
+        }
+
+        public async Task<List<VacancyDTO>?> GetAllVacancyByCategoryAsync(string name)
+        {
+            int? categoryId = await GetIdCategoryByNameAsync(name);
+            if (categoryId == null)
+            {
+                return null;
+            }
+
+            var category = await context.Categories
+                .Include(c => c.CategoryVacancies)
+                .FirstOrDefaultAsync(c => c.CategoryId == categoryId);
+
+            if (category == null) { return null; }
+
+            var vacanciesDTO = category.CategoryVacancies.Select(v => new VacancyDTO
+            {
+                Title = v.Title,
+                Description = v.Description,
+                Location = v.Location,
+                Salary = v.Salary,
+                CategoryName = category.Name
+            }).ToList();
+
+            return vacanciesDTO;
         }
 
         public async Task<int?> GetIdCategoryByNameAsync(string name)

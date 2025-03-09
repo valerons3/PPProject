@@ -47,15 +47,22 @@ namespace SearchWork.Services
             throw new NotImplementedException();
         }
 
-        public Task<List<VacancyDTO>?> GetAllVacanciesAsync()
+        public async Task<List<VacancyDTO>?> GetAllVacanciesAsync()
         {
-            throw new NotImplementedException();
+            var vacancies = await context.Vacancies.ToListAsync();
+            if (vacancies.Count == 0) { return null; }
+
+            var vacancyDTOs = vacancies.Select(v => new VacancyDTO
+            {
+                Title = v.Title,
+                Description = v.Description,
+                Location = v.Location,
+                Salary = v.Salary,
+            }).ToList();
+
+            return vacancyDTOs;
         }
 
-        public Task<List<VacancyDTO>?> GetAllVacanciesByCategoryAsync(string categoryName)
-        {
-            throw new NotImplementedException();
-        }
 
         public Task<List<VacancyDTO>?> GetAllVacanciesCompanyAsync(int userId)
         {

@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\services\\interfaces\\ivacancy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\services\\interfaces\\ivacancy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\services\\vacancyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\services\\vacancyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\controllers\\vacancycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\entity\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\entity\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\services\\interfaces\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\services\\interfaces\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\entity\\vacancy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\entity\\vacancy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\dto\\vacancydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\dto\\vacancydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,20 +59,8 @@
       "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\entity\\vacancy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\entity\\vacancy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\services\\interfaces\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\services\\interfaces\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\entity\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,14 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\services\\interfaces\\ivacancy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\services\\interfaces\\ivacancy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\entity\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\entity\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|solutionrelative:searchwork\\models\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24B1688A-BFD9-486B-8AED-5BE60522897E}|SearchWork\\SearchWork.csproj|d:\\visual project\\ppproject\\backend\\searchwork\\searchwork\\models\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,284 +142,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "VacancyService.cs",
               "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\VacancyService.cs",
               "RelativeDocumentMoniker": "SearchWork\\Services\\VacancyService.cs",
               "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\VacancyService.cs",
               "RelativeToolTip": "SearchWork\\Services\\VacancyService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBYAAABsAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAswEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T17:39:44.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "SearchWork\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:32:11.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Services\\AuthService.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\AuthService.cs",
-              "RelativeToolTip": "SearchWork\\Services\\AuthService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAswDAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:14:24.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Program.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Program.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Program.cs",
-              "RelativeToolTip": "SearchWork\\Program.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAD8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:15:18.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Services\\CategoryService.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\CategoryService.cs",
-              "RelativeToolTip": "SearchWork\\Services\\CategoryService.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAwwIIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T14:10:21.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VacancyController.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\VacancyController.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Controllers\\VacancyController.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\VacancyController.cs*",
-              "RelativeToolTip": "SearchWork\\Controllers\\VacancyController.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:14:02.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VacancyDTO.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\VacancyDTO.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\VacancyDTO.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\VacancyDTO.cs",
-              "RelativeToolTip": "SearchWork\\Models\\DTO\\VacancyDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T17:31:47.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompanyController.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\CompanyController.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Controllers\\CompanyController.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\CompanyController.cs*",
-              "RelativeToolTip": "SearchWork\\Controllers\\CompanyController.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCEAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T03:09:15.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "SearchWork\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwEcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T15:01:12.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Vacancy.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Vacancy.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Models\\Entity\\Vacancy.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Vacancy.cs",
-              "RelativeToolTip": "SearchWork\\Models\\Entity\\Vacancy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:20:14.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Company.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Company.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Models\\Entity\\Company.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Company.cs",
-              "RelativeToolTip": "SearchWork\\Models\\Entity\\Company.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAuwAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:17:58.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Models\\Entity\\User.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\User.cs",
-              "RelativeToolTip": "SearchWork\\Models\\Entity\\User.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADwvxMAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T22:21:01.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "IVacancy.cs",
               "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\Interfaces\\IVacancy.cs",
               "RelativeDocumentMoniker": "SearchWork\\Services\\Interfaces\\IVacancy.cs",
               "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\Interfaces\\IVacancy.cs",
               "RelativeToolTip": "SearchWork\\Services\\Interfaces\\IVacancy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T17:31:03.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
+              "Title": "VacancyController.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\VacancyController.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Controllers\\VacancyController.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\VacancyController.cs",
+              "RelativeToolTip": "SearchWork\\Controllers\\VacancyController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:14:02.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ICategory.cs",
               "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\Interfaces\\ICategory.cs",
               "RelativeDocumentMoniker": "SearchWork\\Services\\Interfaces\\ICategory.cs",
               "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\Interfaces\\ICategory.cs",
               "RelativeToolTip": "SearchWork\\Services\\Interfaces\\ICategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T15:07:51.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CompanyService.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\CompanyService.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Services\\CompanyService.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\CompanyService.cs",
-              "RelativeToolTip": "SearchWork\\Services\\CompanyService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAADwv0QAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T02:48:23.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CreateVacancyDto.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CreateVacancyDto.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\CreateVacancyDto.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CreateVacancyDto.cs",
-              "RelativeToolTip": "SearchWork\\Models\\DTO\\CreateVacancyDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T14:09:20.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Category.cs",
               "RelativeDocumentMoniker": "SearchWork\\Models\\Entity\\Category.cs",
               "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Category.cs",
               "RelativeToolTip": "SearchWork\\Models\\Entity\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T23:30:28.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "SearchWork\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAADwv1cAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Services\\CategoryService.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\CategoryService.cs",
+              "RelativeToolTip": "SearchWork\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAIwAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T18:02:16.827Z",
+              "WhenOpened": "2025-03-07T14:10:21.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CompanyCreateDTO.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CompanyCreateDTO.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\CompanyCreateDTO.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CompanyCreateDTO.cs",
-              "RelativeToolTip": "SearchWork\\Models\\DTO\\CompanyCreateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "SearchWork\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T02:28:39.819Z",
+              "WhenOpened": "2025-03-07T15:01:12.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\RegisterDto.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\RegisterDto.cs",
-              "RelativeToolTip": "SearchWork\\Models\\DTO\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:11:36.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\LoginDTO.cs",
-              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\LoginDTO.cs",
-              "RelativeToolTip": "SearchWork\\Models\\DTO\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:35:31.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 4,
               "Title": "CategoryDTO.cs",
               "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CategoryDTO.cs",
               "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\CategoryDTO.cs",
@@ -432,6 +250,176 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Vacancy.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Vacancy.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Entity\\Vacancy.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Vacancy.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Entity\\Vacancy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:20:14.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VacancyDTO.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\VacancyDTO.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\VacancyDTO.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\VacancyDTO.cs",
+              "RelativeToolTip": "SearchWork\\Models\\DTO\\VacancyDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T17:31:47.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Controllers\\CompanyController.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "SearchWork\\Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T03:09:15.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Program.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Program.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Program.cs",
+              "RelativeToolTip": "SearchWork\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAD8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T16:15:18.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\AuthService.cs",
+              "RelativeToolTip": "SearchWork\\Services\\AuthService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:14:24.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SearchWork\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:32:11.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Company.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Entity\\Company.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Company.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Entity\\Company.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:17:58.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\Entity\\User.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\User.cs",
+              "RelativeToolTip": "SearchWork\\Models\\Entity\\User.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvxMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:21:01.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\CompanyService.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Services\\CompanyService.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Services\\CompanyService.cs",
+              "RelativeToolTip": "SearchWork\\Services\\CompanyService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAADwv0QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T02:48:23.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateVacancyDto.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CreateVacancyDto.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\CreateVacancyDto.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CreateVacancyDto.cs",
+              "RelativeToolTip": "SearchWork\\Models\\DTO\\CreateVacancyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T14:09:20.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SearchWork\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAADwv1cAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T18:02:16.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CompanyCreateDTO.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CompanyCreateDTO.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\CompanyCreateDTO.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\CompanyCreateDTO.cs",
+              "RelativeToolTip": "SearchWork\\Models\\DTO\\CompanyCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T02:28:39.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\RegisterDto.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\RegisterDto.cs",
+              "RelativeToolTip": "SearchWork\\Models\\DTO\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:11:36.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "SearchWork\\Models\\DTO\\LoginDTO.cs",
+              "ToolTip": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "SearchWork\\Models\\DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:35:31.296Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 22,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\Visual Project\\PPProject\\backend\\SearchWork\\SearchWork\\Models\\Entity\\Role.cs",
@@ -440,8 +428,7 @@
               "RelativeToolTip": "SearchWork\\Models\\Entity\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:31:05.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T23:31:05.985Z"
             },
             {
               "$type": "Document",
@@ -453,8 +440,7 @@
               "RelativeToolTip": "SearchWork\\Models\\Entity\\Review.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:25:28.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T23:25:28.003Z"
             },
             {
               "$type": "Document",
@@ -466,8 +452,7 @@
               "RelativeToolTip": "SearchWork\\Models\\Entity\\Resume.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T22:56:40.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T22:56:40.019Z"
             },
             {
               "$type": "Document",
@@ -479,8 +464,7 @@
               "RelativeToolTip": "SearchWork\\Models\\Entity\\Notification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:27:12.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T23:27:12.112Z"
             },
             {
               "$type": "Document",
@@ -492,8 +476,7 @@
               "RelativeToolTip": "SearchWork\\Models\\Entity\\Interview.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:28:27.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T23:28:27.681Z"
             },
             {
               "$type": "Document",
@@ -505,8 +488,7 @@
               "RelativeToolTip": "SearchWork\\Models\\Entity\\CategoryRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T14:01:18.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T14:01:18.862Z"
             },
             {
               "$type": "Document",
@@ -518,8 +500,7 @@
               "RelativeToolTip": "SearchWork\\Models\\Entity\\Application.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:22:40.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T23:22:40.301Z"
             },
             {
               "$type": "Document",
@@ -531,8 +512,7 @@
               "RelativeToolTip": "SearchWork\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-03T16:17:47.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T16:17:47.901Z"
             },
             {
               "$type": "Document",

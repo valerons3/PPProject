@@ -8,7 +8,7 @@ using System.Security.Claims;
 
 namespace SearchWork.Controllers
 {
-    [Route("api/category")]
+    [Route("api/vacancy")]
     [Authorize]
     [ApiController]
     public class VacancyController : ControllerBase
@@ -18,6 +18,8 @@ namespace SearchWork.Controllers
         {
             this.vacancyService = vacancyService;
         }
+
+
         [HttpPost]
         public async Task<IActionResult> CreateNewVacancyAsync(VacancyDTO model)
         {

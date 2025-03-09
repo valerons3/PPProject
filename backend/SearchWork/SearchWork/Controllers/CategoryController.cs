@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SearchWork.Models.DTO;
+using SearchWork.Services;
 using SearchWork.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 
@@ -19,7 +20,25 @@ namespace SearchWork.Controllers
             categoryService = category;
         }
 
-        // 🔹 Подтверждение добавления категории (PUT)
+        [HttpGet("category")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllVacanciesByCategoryAsync([FromQuery] string categoryName)
+        {
+            if (string.IsNullOrEmpty(categoryName))
+            {
+                return BadRequest("Название категории не может быть пустым.");
+            }
+
+            var vacancies = await categoryService.GetAllVacancyByCategoryAsync(categoryName);
+
+            if (vacancies == null || !vacancies.Any())
+            {
+                return NotFound("Вакансии по указанной категории не найдены.");
+            }
+
+            return Ok(vacancies);
+        }
+
         [HttpPut("confirm")]
         public async Task<IActionResult> ConfirmCategoryRequestAsync(CategoryDTO model)
         {
@@ -49,7 +68,6 @@ namespace SearchWork.Controllers
             return Ok($"Категория \"{model.CategoryName}\" добавлена в список категорий");
         }
 
-        // 🔹 Создание запроса на добавление категории (POST)
         [HttpPost("add-request")]
         public async Task<IActionResult> CreateCategoryRequestAsync(CategoryDTO model)
         {

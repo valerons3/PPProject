@@ -11,5 +11,6 @@ namespace SearchWork.Services.Interfaces
         public Task<List<CategoryDTO>?> GetAllCategoryAsync();
         public Task<(bool, string)> DeleteCategoryAsync(CategoryDTO model);
         public Task<int?> GetIdCategoryByNameAsync(string name);
+        public Task<List<VacancyDTO>?> GetAllVacancyByCategoryAsync(string name);
     }
 }
