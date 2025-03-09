@@ -2,6 +2,7 @@
 using SearchWork.Data;
 using SearchWork.Models.DTO;
 using SearchWork.Models.Entity;
+using SearchWork.Services.Interfaces;
 
 namespace SearchWork.Services
 {
@@ -124,6 +125,15 @@ namespace SearchWork.Services
             context.Categories.Remove(category);
             await context.SaveChangesAsync();
             return (true, $"Категория \"{model.CategoryName}\" успешно удалена");
+        }
+
+        public async Task<int?> GetIdCategoryByNameAsync(string name)
+        {
+            name = name.Trim();
+            return await context.Categories
+                .Where(c => c.Name.ToLower() == name.ToLower()) 
+                .Select(c => (int?)c.CategoryId)
+                .FirstOrDefaultAsync();
         }
     }
 }

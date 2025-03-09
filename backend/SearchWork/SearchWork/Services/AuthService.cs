@@ -7,6 +7,7 @@ using static Org.BouncyCastle.Math.EC.ECCurve;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using SearchWork.Services.Interfaces;
 
 namespace SearchWork.Services
 {

@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SearchWork.Controllers.VacancyController",
+    "Method": "CreateNewVacancyAsync",
+    "RelativePath": "api/category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SearchWork.Models.DTO.VacancyDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SearchWork.Controllers.CategoryController",
     "Method": "CreateCategoryRequestAsync",
     "RelativePath": "api/category/add-request",

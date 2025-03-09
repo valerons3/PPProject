@@ -1,6 +1,6 @@
 ﻿using SearchWork.Models.DTO;
 
-namespace SearchWork.Services
+namespace SearchWork.Services.Interfaces
 {
     public interface ICategory
     {
@@ -10,5 +10,6 @@ namespace SearchWork.Services
         public Task<bool> DeleteAllAddedCategoryRequestAsync();
         public Task<List<CategoryDTO>?> GetAllCategoryAsync();
         public Task<(bool, string)> DeleteCategoryAsync(CategoryDTO model);
+        public Task<int?> GetIdCategoryByNameAsync(string name);
     }
 }

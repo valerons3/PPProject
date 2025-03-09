@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using SearchWork.Data;
 using SearchWork.Models.DTO;
 using SearchWork.Models.Entity;
+using SearchWork.Services.Interfaces;
 
 namespace SearchWork.Services
 {

@@ -7,6 +7,7 @@ using SearchWork.Data;
 using SearchWork.Services;
 using SearchWork.Validators;
 using System.Text;
+using SearchWork.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -60,6 +61,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IAuth, AuthService>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<ICategory, CategoryService>();
+builder.Services.AddScoped<IVacancy, VacancyService>();
 builder.Services.AddValidatorsFromAssemblyContaining<CompanyCreateValidator>();
 
 var jwtSettings = builder.Configuration.GetSection("Jwt");

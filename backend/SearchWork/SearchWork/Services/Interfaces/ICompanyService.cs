@@ -1,6 +1,6 @@
 ﻿using SearchWork.Models.DTO;
 
-namespace SearchWork.Services
+namespace SearchWork.Services.Interfaces
 {
     public interface ICompanyService
     {

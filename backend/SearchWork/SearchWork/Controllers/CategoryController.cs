@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SearchWork.Models.DTO;
-using SearchWork.Services;
+using SearchWork.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace SearchWork.Controllers

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SearchWork.Models.DTO;
-using SearchWork.Services;
+using SearchWork.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace SearchWork.Controllers
@@ -31,7 +31,7 @@ namespace SearchWork.Controllers
 
             if (role != "Employer")
             {
-                return Forbid("Доступ запрещен. Требуется роль 'Employer'");
+                return Unauthorized("Доступ запрещен. Требуется роль 'Employer'");
             }
 
             var result = await companyService.FindCompanyByIdAsync(userId.Value);
@@ -55,7 +55,7 @@ namespace SearchWork.Controllers
 
             if (role != "Employer")
             {
-                return Forbid("Доступ запрещен. Требуется роль 'Employer'");
+                return Unauthorized("Доступ запрещен. Требуется роль 'Employer'");
             }
 
             var result = await companyService.CreateCompany(userId.Value, model);

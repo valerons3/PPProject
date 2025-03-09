@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SearchWork.Services;
 using SearchWork.Models.Entity;
 using SearchWork.Models.DTO;
 using SearchWork.Data;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authorization;
+using SearchWork.Services.Interfaces;
 
 namespace SearchWork.Controllers
 {
