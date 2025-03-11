@@ -95,5 +95,11 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<CategoryRequest>()
             .HasKey(c => c.RequestId);
+
+        modelBuilder.Entity<Role>().HasData(
+            new Role { RoleId = 1, RoleName = "Seeker" },
+            new Role { RoleId = 2, RoleName = "Employer" },
+            new Role { RoleId = 3, RoleName = "Admin" }
+            );
     }
 }

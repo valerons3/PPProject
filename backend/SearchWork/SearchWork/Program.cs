@@ -16,14 +16,16 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
+    options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.AllowAnyOrigin()
+            policy.WithOrigins("http://127.0.0.1:5500") 
+                  .AllowAnyHeader()
                   .AllowAnyMethod()
-                  .AllowAnyHeader();
+                  .AllowCredentials();
         });
 });
+
 
 builder.Services.AddSwaggerGen(options =>
 {
@@ -100,15 +102,11 @@ builder.Services.AddAuthentication(options =>
 });
 
 
-
-
-
-
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");
 
 // Конфигурация HTTP-конвейера
 if (app.Environment.IsDevelopment())
