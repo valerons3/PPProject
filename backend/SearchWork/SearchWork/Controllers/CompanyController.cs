@@ -50,22 +50,22 @@ namespace SearchWork.Controllers
 
             if (userId == null)
             {
-                return Unauthorized("Не верный токен или ошибка получения идентификатора пользователя.");
+                return Unauthorized(new { message = "Не верный токен или ошибка получения идентификатора пользователя." });
             }
 
             if (role != "Employer")
             {
-                return Unauthorized("Доступ запрещен. Требуется роль 'Employer'");
+                return Unauthorized(new { message = "Доступ запрещен. Требуется роль 'Employer'." });
             }
 
             var result = await companyService.CreateCompany(userId.Value, model);
 
             if (!result.Success)
             {
-                return BadRequest(result.Message);
+                return BadRequest(new { message = result.Message });
             }
 
-            return Ok(result.Message);
+            return Ok(new { message = result.Message });
         }
 
         private int? GetUserIdFromToken(out string role)
@@ -75,15 +75,18 @@ namespace SearchWork.Controllers
             var authHeader = HttpContext.Request.Headers["Authorization"].FirstOrDefault();
             if (string.IsNullOrEmpty(authHeader) || !authHeader.StartsWith("Bearer "))
             {
+                Console.WriteLine("Токен не найден или некорректный.");
                 return null;
             }
 
             var token = authHeader.Substring("Bearer ".Length).Trim();
+
             var handler = new JwtSecurityTokenHandler();
             var jwtToken = handler.ReadJwtToken(token);
 
             role = jwtToken.Payload["role"]?.ToString();
             return int.TryParse(jwtToken.Payload["nameid"]?.ToString(), out int userId) ? userId : (int?)null;
         }
+
     }
 }

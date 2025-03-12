@@ -16,13 +16,12 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend",
+    options.AddPolicy("AllowAll",
         policy =>
         {
-            policy.WithOrigins("http://127.0.0.1:5500") 
-                  .AllowAnyHeader()
+            policy.AllowAnyOrigin()
                   .AllowAnyMethod()
-                  .AllowCredentials();
+                  .AllowAnyHeader();
         });
 });
 
@@ -64,6 +63,7 @@ builder.Services.AddScoped<IAuth, AuthService>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<ICategory, CategoryService>();
 builder.Services.AddScoped<IVacancy, VacancyService>();
+builder.Services.AddScoped<IUser, UserService>();
 builder.Services.AddValidatorsFromAssemblyContaining<CompanyCreateValidator>();
 
 var jwtSettings = builder.Configuration.GetSection("Jwt");
@@ -106,7 +106,7 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-app.UseCors("AllowFrontend");
+app.UseCors("AllowAll");
 
 // Конфигурация HTTP-конвейера
 if (app.Environment.IsDevelopment())

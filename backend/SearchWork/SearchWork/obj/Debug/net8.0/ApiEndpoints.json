@@ -116,6 +116,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SearchWork.Controllers.TestController",
+    "Method": "Test",
+    "RelativePath": "api/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SearchWork.Controllers.UsersController",
+    "Method": "GetInfoUserById",
+    "RelativePath": "api/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SearchWork.Controllers.VacancyController",
     "Method": "CreateNewVacancyAsync",
     "RelativePath": "api/vacancy",
