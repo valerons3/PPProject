@@ -37,11 +37,19 @@ namespace SearchWork.Controllers
             var result = await companyService.FindCompanyByIdAsync(userId.Value);
             if (result == null)
             {
-                return NotFound("Компания не найдена.");
+                return NotFound(new { message = "Компания не найдена." });
             }
 
             return Ok(result);
         }
+
+
+        /// <summary>
+        /// Получает информацию о компании пользователя.
+        /// </summary>
+        /// <returns>Информация о компании.</returns>
+        /// <response code="200">Возвращает информацию о компании.</response>
+        /// <response code="404">Компания не найдена.</response>
 
         [HttpPost]
         public async Task<IActionResult> CreateCompany([FromBody] CompanyCreateDTO model)

@@ -8,6 +8,7 @@ using SearchWork.Services;
 using SearchWork.Validators;
 using System.Text;
 using SearchWork.Services.Interfaces;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,13 +29,24 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddSwaggerGen(options =>
 {
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "SearchWork API",
+        Version = "v1"
+    });
+
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    options.IncludeXmlComments(xmlPath);
+
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
         Type = SecuritySchemeType.Http,
         Scheme = "Bearer",
         BearerFormat = "JWT",
-        In = ParameterLocation.Header
+        In = ParameterLocation.Header,
+        Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
     });
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement

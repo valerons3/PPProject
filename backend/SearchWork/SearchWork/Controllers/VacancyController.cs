@@ -26,7 +26,7 @@ namespace SearchWork.Controllers
             if (string.IsNullOrEmpty(companyName)) { return BadRequest("Нужно передать название компании"); }
 
             var companyVacancies = await vacancyService.GetAllVacanciesCompanyAsync(companyName);
-            if (companyVacancies == null) { return NotFound("Вакансии для указанной компании не найдены"); }
+            if (companyVacancies == null) { return NotFound(new { message = "Вакансии для указанной компании не найдены"}) ; }
 
             return Ok(companyVacancies);
         }

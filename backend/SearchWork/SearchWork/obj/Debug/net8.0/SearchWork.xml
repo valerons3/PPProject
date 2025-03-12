@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SearchWork</name>
+    </assembly>
+    <members>
+        <member name="M:SearchWork.Controllers.CompanyController.CreateCompany(SearchWork.Models.DTO.CompanyCreateDTO)">
+            <summary>
+            Получает информацию о компании пользователя.
+            </summary>
+            <returns>Информация о компании.</returns>
+            <response code="200">Возвращает информацию о компании.</response>
+            <response code="404">Компания не найдена.</response>
+        </member>
+        <member name="T:SearchWork.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:SearchWork.Migrations.AddNewTableCategoryRequests">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.AddNewTableCategoryRequests.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.AddNewTableCategoryRequests.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.AddNewTableCategoryRequests.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:SearchWork.Migrations.ChangeTableCategoryRequests">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.ChangeTableCategoryRequests.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.ChangeTableCategoryRequests.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.ChangeTableCategoryRequests.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:SearchWork.Migrations.AddInitialData">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.AddInitialData.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.AddInitialData.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SearchWork.Migrations.AddInitialData.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

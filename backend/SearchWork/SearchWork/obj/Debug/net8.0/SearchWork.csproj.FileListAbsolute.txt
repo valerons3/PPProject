@@ -167,3 +167,5 @@ D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\Syste
 D:\Visual Project\PPProject\backend\SearchWork\SearchWork\obj\Debug\net8.0\SearchWork.sourcelink.json
 D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\bin\Debug\net8.0\SearchWork.xml
+D:\Visual Project\PPProject\backend\SearchWork\SearchWork\obj\Debug\net8.0\SearchWork.xml
