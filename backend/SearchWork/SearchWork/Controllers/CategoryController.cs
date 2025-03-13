@@ -20,6 +20,11 @@ namespace SearchWork.Controllers
             categoryService = category;
         }
 
+        /// <summary>
+        /// Список всех категорий
+        /// </summary>
+        /// <returns>Возвращает список всех категорий</returns>
+        /// <response code="200">Список категорий, если нет то пустой список</response>
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> GetAllCategoriesAsync()
@@ -30,6 +35,14 @@ namespace SearchWork.Controllers
             return Ok(categories);
         }
 
+
+        /// <summary>
+        /// Список всех вакансий по категории
+        /// </summary>
+        /// <returns>Возвращает список всех вакансий по категории</returns>
+        /// <response code="400">Название категории пустое</response>
+        /// <response code="404">Вакансий по категории не найдено</response>
+        /// <response code="200">Список вакансий по категории</response>
         [HttpGet("vacancies")]
         [AllowAnonymous]
         public async Task<IActionResult> GetAllVacanciesByCategoryAsync([FromQuery] string categoryName)
@@ -49,6 +62,14 @@ namespace SearchWork.Controllers
             return Ok(vacancies);
         }
 
+        /// <summary>
+        /// Подтверждение на добавление категории (только для Админов)
+        /// </summary>
+        /// <returns>Сообщение об успехе</returns>
+        /// <response code="401">Не верный токен</response>
+        /// <response code="403">Доступ запрещён</response>
+        /// <response code="400">Категории не существует в запросах на добавление</response>
+        /// <response code="200">Категория добавлена</response>
         [HttpPut("confirm")]
         public async Task<IActionResult> ConfirmCategoryRequestAsync(CategoryDTO model)
         {
@@ -56,7 +77,7 @@ namespace SearchWork.Controllers
 
             if (string.IsNullOrEmpty(authHeader) || !authHeader.StartsWith("Bearer "))
             {
-                return Unauthorized("Не верный токен");
+                return Unauthorized(new { message = "Не верный токен" });
             }
             var token = authHeader.Substring("Bearer ".Length).Trim();
 
@@ -78,6 +99,14 @@ namespace SearchWork.Controllers
             return Ok($"Категория \"{model.CategoryName}\" добавлена в список категорий");
         }
 
+        /// <summary>
+        /// Создание запроса на добавление категории
+        /// </summary>
+        /// <returns>Сообщение об успехе</returns>
+        /// <response code="401">Не верный токен</response>
+        /// <response code="403">Доступ запрещён</response>
+        /// <response code="400">Запрос на добавление категории уже существуетт</response>
+        /// <response code="200">Запрос на добавление категории создан</response>
         [HttpPost("add-request")]
         public async Task<IActionResult> CreateCategoryRequestAsync(CategoryDTO model)
         {
@@ -85,7 +114,7 @@ namespace SearchWork.Controllers
 
             if (string.IsNullOrEmpty(authHeader) || !authHeader.StartsWith("Bearer "))
             {
-                return Unauthorized("Не верный токен");
+                return Unauthorized(new { message = "Не верный токен" });
             }
             var token = authHeader.Substring("Bearer ".Length).Trim();
 

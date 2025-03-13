@@ -21,7 +21,12 @@ namespace SearchWork.Controllers
             this.authService = authService;
         }
 
-
+        /// <summary>
+        /// Регистрация пользователя
+        /// </summary>
+        /// <returns>JWT-токен</returns>
+        /// <response code="200">Возвращает JWT-токен</response>
+        /// <response code="400">Пользователь с такой почтой уже существует</response>
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto model)
         {
@@ -32,6 +37,12 @@ namespace SearchWork.Controllers
             return Ok(new { token = result });
         }
 
+        /// <summary>
+        /// Авторизация пользователя
+        /// </summary>
+        /// <returns>JWT-токен</returns>
+        /// <response code="200">Возвращает JWT-токен</response>
+        /// <response code="401">Сообщение о неверном пароле или емейл</response>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDTO model)
         {

@@ -4,13 +4,22 @@
         <name>SearchWork</name>
     </assembly>
     <members>
+        <member name="M:SearchWork.Controllers.CompanyController.GetCompanyByUserIdAsync">
+            <summary>
+            Информация о компании по id пользователя
+            </summary>
+            <returns>Информация о компании</returns>
+            <response code="200">Возвращает информацию о компании</response>
+            <response code="401">Пользователь не соответствует роли "Работодатель"(Employer)</response>
+            /// <response code="404">Компания не найдена</response>
+        </member>
         <member name="M:SearchWork.Controllers.CompanyController.CreateCompany(SearchWork.Models.DTO.CompanyCreateDTO)">
             <summary>
-            Получает информацию о компании пользователя.
+            Создаёт компанию
             </summary>
-            <returns>Информация о компании.</returns>
-            <response code="200">Возвращает информацию о компании.</response>
-            <response code="404">Компания не найдена.</response>
+            <returns>Сообщение о результате.</returns>
+            <response code="200">Возвращает сообщение о успешном создании</response>
+            <response code="404">Пользователь не соответствует роли/Ошибка при создании</response>
         </member>
         <member name="T:SearchWork.Migrations.InitialCreate">
             <inheritdoc />

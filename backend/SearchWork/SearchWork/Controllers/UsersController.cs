@@ -15,6 +15,13 @@ namespace SearchWork.Controllers
             this.userService = userService;
         }
 
+        /// <summary>
+        /// Информация о пользователе
+        /// </summary>
+        /// <returns>Информация о пользователе</returns>
+        /// <response code="401">Не верный токен/не удалось получить id пользователя из токена</response>
+        /// <response code="400">Пользователь не существует</response>
+        /// <response code="200">Информация о пользователе</response>
         [HttpGet]
         public async Task<IActionResult> GetInfoUserById()
         {
@@ -22,7 +29,7 @@ namespace SearchWork.Controllers
 
             if (string.IsNullOrEmpty(authHeader) || !authHeader.StartsWith("Bearer "))
             {
-                return Unauthorized("Неверный токен");
+                return Unauthorized(new { message = "Неверный токен" });
             }
 
             var token = authHeader.Substring("Bearer ".Length).Trim();
@@ -33,13 +40,13 @@ namespace SearchWork.Controllers
 
             if (string.IsNullOrEmpty(userId))
             {
-                return Unauthorized("Не удалось получить ID пользователя");
+                return Unauthorized(new { message = "Не удалось получить ID пользователя" });
             }
 
             var result = await userService.GetUserInfoByIdAsync(int.Parse(userId));
             if (!result.Success)
             {
-                return BadRequest("Не удалось найти пользователя");
+                return BadRequest(new { message = "Не удалось найти пользователя" });
             }
             return Ok(result.user);
         }

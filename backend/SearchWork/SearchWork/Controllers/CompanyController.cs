@@ -19,6 +19,14 @@ namespace SearchWork.Controllers
             this.companyService = companyService;
         }
 
+
+        /// <summary>
+        /// Информация о компании по id пользователя
+        /// </summary>
+        /// <returns>Информация о компании</returns>
+        /// <response code="200">Возвращает информацию о компании</response>
+        /// <response code="401">Пользователь не соответствует роли "Работодатель"(Employer)</response>
+        /// /// <response code="404">Компания не найдена</response>
         [HttpGet("me")]
         public async Task<IActionResult> GetCompanyByUserIdAsync()
         {
@@ -26,12 +34,12 @@ namespace SearchWork.Controllers
 
             if (userId == null)
             {
-                return Unauthorized("Не верный токен или ошибка получения идентификатора пользователя.");
+                return Unauthorized(new { message = "Не верный токен или ошибка получения идентификатора пользователя." });
             }
 
             if (role != "Employer")
             {
-                return Unauthorized("Доступ запрещен. Требуется роль 'Employer'");
+                return Unauthorized(new { message = "Доступ запрещен. Требуется роль 'Employer'" });
             }
 
             var result = await companyService.FindCompanyByIdAsync(userId.Value);
@@ -45,11 +53,11 @@ namespace SearchWork.Controllers
 
 
         /// <summary>
-        /// Получает информацию о компании пользователя.
+        /// Создаёт компанию
         /// </summary>
-        /// <returns>Информация о компании.</returns>
-        /// <response code="200">Возвращает информацию о компании.</response>
-        /// <response code="404">Компания не найдена.</response>
+        /// <returns>Сообщение о результате.</returns>
+        /// <response code="200">Возвращает сообщение о успешном создании</response>
+        /// <response code="404">Пользователь не соответствует роли/Ошибка при создании</response>
 
         [HttpPost]
         public async Task<IActionResult> CreateCompany([FromBody] CompanyCreateDTO model)

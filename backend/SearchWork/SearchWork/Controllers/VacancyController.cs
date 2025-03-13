@@ -19,6 +19,13 @@ namespace SearchWork.Controllers
             this.vacancyService = vacancyService;
         }
 
+        /// <summary>
+        /// Вакансии компании
+        /// </summary>
+        /// <returns>Список вакансий компании</returns>
+        /// <response code="400">Название компании пустое</response>
+        /// <response code="404">Вакансии компании не найдены</response>
+        /// <response code="200">Список всех вакансий компании</response>
         [HttpGet("company")]
         [AllowAnonymous]
         public async Task<IActionResult> GetAllCompanyVacancies([FromQuery] string companyName)
@@ -31,6 +38,13 @@ namespace SearchWork.Controllers
             return Ok(companyVacancies);
         }
 
+        /// <summary>
+        /// Создание вакансии
+        /// </summary>
+        /// <returns>Список вакансий компании</returns>
+        /// <response code="401">Запрещён доступ/не верный токен</response>
+        /// <response code="400">У пользователя нет компании/не верно переданная категория</response>
+        /// <response code="200">Сообщение об успешном создании вакансии</response>
         [HttpPost]
         public async Task<IActionResult> CreateNewVacancyAsync(VacancyDTO model)
         {
@@ -38,7 +52,7 @@ namespace SearchWork.Controllers
 
             if (string.IsNullOrEmpty(authHeader) || !authHeader.StartsWith("Bearer "))
             {
-                return Unauthorized("Не верный токен");
+                return Unauthorized(new { message = "Не верный токен" });
             }
 
             var token = authHeader.Substring("Bearer ".Length).Trim();
@@ -48,18 +62,18 @@ namespace SearchWork.Controllers
             var role = jwtToken.Payload["role"]?.ToString();
             if (role != "Employer")
             {
-                return Unauthorized("Доступ запрещён. Требуется роль 'Employer'");
+                return Unauthorized(new { message = "Доступ запрещён. Требуется роль 'Employer'"});
             }
 
             var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "nameid");
             if (userIdClaim == null)
             {
-                return Unauthorized("Не удалось получить ID пользователя из токена");
+                return Unauthorized(new { message = "Не удалось получить ID пользователя из токена" });
             }
 
             if (!int.TryParse(userIdClaim.Value, out int userId))
             {
-                return Unauthorized("Некорректный формат ID пользователя в токене");
+                return Unauthorized(new { message = "Некорректный формат ID пользователя в токене" });
             }
 
             var result = await vacancyService.CreateVacancyAsync(model, userId);
